@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- ============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Roboto:400,700" rel="stylesheet" type="text/css" />
+	<!-- ============================================= -->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<!-- ============================================= -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!-- ============================================= -->
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<!-- ============================================= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- ============================================= -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/> 
+	<!-- ============================================= -->
+	<link href="css/jquery.dataTables.min.css" rel="stylesheet" media="screen">
+	<!-- ============================================= -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- ============================================= -->
+	<link href="css/validationEngine.jquery.css" rel="stylesheet" media="screen">
+	<!-- ============================================= -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<title>Processo Teste</title>
+
+</head>
+
+<body class="stretched">
+	<div id="wrapper" class="clearfix">
+
+		<!-- Menu
+		============================================= -->
+		<header id="header" class="clearfix static-sticky responsive-sticky-header transparent-header dark">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="fa fa-align-justify"></i></div>
+
+					<div id="logo">
+						<a href="slider"  data-scrollto="#slider" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
+						<a href="slider"  data-scrollto="#slider" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+					</div>
+
+				
+					<nav id="primary-menu" class="d-lg-flex d-xl-flex align-items-center justify-content-xl-between justify-content-lg-between fnone">
+
+						<ul class="not-dark align-self-start"></ul>
+					
+
+						<ul class="pr-0 header-button">
+							<li>
+								<button type="submit"  id="add" class="submit button button-effect">Inserir Dados</a>
+							</li>
+						</ul>
+
+					</nav>
+
+				</div>
+
+			</div>
+
+		</header>
+
+	
+
+		<!-- Tabela
+		============================================= -->
+		<section id="content" style="background-color: #000; overflow: visible">
+
+			<div class="content-wrap pt-5">
+
+				<div id="section-about" class="section page-section nobg pt-0 clearfix">
+
+					<div class="container clearfix">
+
+						<div class="mb-5 dark">
+							<span class="display-4 t700 gradient-underline font-primary">Processo Seletivo</span>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="row justify-content-around dark">
+							<div class="col-md-12">
+								<div id="list">
+									<table style="color:#000;  background-image: linear-gradient(to right bottom, #e160e7, #a977ed, #7682e4, #5186ce, #4a84b1);" id="table" class="display"></table>
+								
+								</div>
+								
+									<form class="form-horizontal" role="form" id="caminhoId">
+										<h4>Cadastro</h4>
+										<div class="form-group">
+											<label for="seq" class="col-sm-2 control-label">ID</label>
+											<div class="col-sm-6">
+												<p class="form-control-static" id="seq"></p>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="nome" class="col-sm-2 control-label">Nome</label>
+											<div class="col-sm-6">
+												<input type="text" pattern="[a-zA-Z\s]+$" style="border-color: aliceblue" class="form-control" id="nome" placeholder="Digite o nome" required>
+											  </div>
+										  </div>
+										<div class="form-group">
+											<label for="sobrenome" class="col-sm-2 control-label">Sobrenome</label>
+											<div class="col-sm-6">
+												<input type="text" pattern="[a-zA-Z\s]+$" style="border-color: aliceblue"  class="form-control" id="sobrenome" placeholder="Digite o sobrenome" required>
+											  </div>
+										</div>
+										<div class="form-group">
+											<label for="avatar" class="col-sm-2 control-label">Celular</label>
+											<div class="col-sm-6">
+												<input type="text" style="border-color: aliceblue"  class="form-control" placeholder="Digite Telefone" id="avatar" required><small>Format: 92027085</small>
+											  </div>
+										</div>
+										<div class="form-group">
+											<div class="col-sm-offset-2 col-sm-8">
+												<button class="btn btn-primary" id="cancel">Cancelar</button>
+												<button type="submit" class="submit btn btn-success" id="save">Salvar</button>
+											</div>
+										</div>
+									</form>
+
+								</div>
+							</div>
+
+							
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- Contato
+		============================================= -->
+		<footer id="footer" class="dark" style="background-image: linear-gradient(to top, #7a7474, #5a5656, #3d3a3a, #212020, #000000); border-top-color: #000">
+
+			<div class="container">
+				<div class="footer-widgets-wrap clearfix">
+					<div class="row clearfix">
+
+						<div class="col-lg-4">
+
+							<div class="widget clearfix">
+								<div class="row clearfix">
+									<div class="col-lg-8 bottommargin-sm clearfix">
+										<span class="display-4 t700 gradient-underline font-primary">Contato</span>
+										<p><br>Endereço: Tabarajaras,614 - Saraiva<br>Bairro:Saraiva<br>Telefone:(34) 992027097</p>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div id="copyrights" class="nobg notoppadding">
+
+				<div class="container clearfix">
+
+					<div class="center" style="color:#000">
+						Copyrights &copy; 2019 Monica Marcela.<br>
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+	</div>
+
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>	
+	<script src="js/jquery.gmap.js"></script>
+	
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery.validationEngine-2.6.2.js"></script>
+	<script type="text/javascript" src="js/jquery.validationEngine-en.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables-1.10.0.min.js"></script>
+
+
+	<script src="js/functions.js"></script>
+
+	
+
+</body>
+</html>
